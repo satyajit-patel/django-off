@@ -8,3 +8,6 @@ cd projectName
     python manage.py runserver
 deactivate
 ```
+
+- flow
+user -> req -> urls.py -> views.js -> res -> user
