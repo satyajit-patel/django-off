@@ -6,6 +6,7 @@ py -m pip install Django
 django-admin startproject projectName
 cd projectName
     python manage.py runserver
+    python manage.py startapp appName // make sure to tell the project that we have a new app now
 deactivate
 ```
 
