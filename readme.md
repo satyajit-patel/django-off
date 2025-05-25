@@ -1,4 +1,4 @@
-#### some usefull commands
+#### Some usefull commands
 ```
 python -m venv .venv
 .venv\Scripts\activate
@@ -7,10 +7,14 @@ django-admin startproject projectName
 cd projectName
     python manage.py runserver
     python manage.py startapp appName
-    python manage.py migrate // removes unapplied migration errors
-    python manage.py createsuperuser // (just set name&pass)lets you inside the django's pre-cooked auth
+    python manage.py migrate
+    python manage.py createsuperuser
+    pip install pillow // for image upload
+    // to load model we need 2 commands
+        python manage.py makemigrations appName
+        python manage.py migrate
 deactivate
 ```
 
-#### flow
+#### Flow
 user -> req -> urls.py -> views.js -> res -> user
