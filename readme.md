@@ -7,6 +7,7 @@ django-admin startproject projectName
 cd projectName
     python manage.py runserver
     python manage.py startapp appName
+    python manage.py migrate // removes unapplied migration errors
 deactivate
 ```
 
