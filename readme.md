@@ -10,9 +10,10 @@ cd projectName
     python manage.py migrate
     python manage.py createsuperuser
     pip install pillow // for image upload
-    // to load model we need 2 commands
-        python manage.py makemigrations appName
-        python manage.py migrate
+    ```
+    python manage.py makemigrations appName
+    python manage.py migrate
+    ```
 deactivate
 ```
 
