@@ -8,6 +8,7 @@ cd projectName
     python manage.py runserver
     python manage.py startapp appName
     python manage.py migrate // removes unapplied migration errors
+    python manage.py createsuperuser // (just set name&pass)lets you inside the django's pre-cooked auth
 deactivate
 ```
 
