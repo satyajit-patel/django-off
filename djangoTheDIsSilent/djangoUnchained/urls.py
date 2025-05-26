@@ -6,4 +6,5 @@ from . import views
 
 urlpatterns = [
     path('', views.appHome, name='appHome'),
+    path('<int:hero_id>/', views.hero_detail, name='hero_detail'),
 ]

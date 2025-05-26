@@ -55,6 +55,26 @@
             text-align: center;
             color: #333;
         }
+
+        .card button {
+            background-color: #4a90e2;
+            color: #fff;
+            border: none;
+            padding: 10px 16px;
+            margin: 12px auto;
+            display: block;
+            border-radius: 8px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .card button:hover {
+            background-color: #357ab8;
+            transform: scale(1.05);
+        }
+
+
     </style>
 </head>
 <body>
@@ -65,8 +85,14 @@
             <div class="card">
                 <img src="{{ it.image.url }}" alt="{{ it.name }}">
                 <h3>{{ it.name }}</h3>
+                <a href="{% url 'hero_detail' it.id %}">
+                    <button>
+                        View Profile
+                    </button>
+                </a>
             </div>
         {% endfor %}
     </div>
+
 </body>
 </html>
