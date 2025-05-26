@@ -7,13 +7,10 @@ django-admin startproject projectName
 cd projectName
     python manage.py runserver
     python manage.py startapp appName
-    python manage.py migrate
     python manage.py createsuperuser
-    pip install pillow // for image upload
-    ```
+    pip install pillow
     python manage.py makemigrations appName
     python manage.py migrate
-    ```
 deactivate
 ```
 
